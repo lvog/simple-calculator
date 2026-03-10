@@ -115,7 +115,10 @@ svg {
   border: 0;
 }
 
-.screen:focus {
+.screen:focus,
+.screen:focus-visible,
+button:focus,
+button:focus-visible {
   outline: none;
 }
 
