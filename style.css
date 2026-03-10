@@ -1,0 +1,163 @@
+:root {
+  --white: #fff;
+  --blue: #1991ff;
+
+  --base-font-family: "Montserrat", sans-serif;
+  --base-font-size: 14px;
+  --base-bg: var(--white);
+  --base-border-radius: 15px;
+
+  --calculator-max-width: 300px;
+  --calculator-padding: 15px;
+  --calculator-bg: #17181a;
+
+  --screen-height: 50px;
+  --screen-font-size: 26px;
+  --screen-padding: 15px 10px;
+  --screen-color: var(--white);
+  --screen-bg: transparent;
+
+  --btn-min-height: 40px;
+  --btn-padding: 10px 15px;
+  --btn-color: var(--blue);
+  --btn-bg: #303136;
+
+  --btn-operation-color: var(--white);
+  --btn-operation-bg: var(--blue);
+
+  --btn-reset-color: var(--white);
+  --btn-reset-bg: #a5a5a5;
+
+  --btn-submit-color: var(--white);
+  --btn-submit-bg: #0d70cb;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  min-width: 360px;
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  line-height: 1.5;
+  background: var(--base-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+#wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.calculator {
+  max-width: var(--calculator-max-width);
+  background: var(--calculator-bg);
+  padding: var(--calculator-padding);
+  border-radius: var(--base-border-radius);
+}
+
+.row {
+  display: flex;
+}
+
+.col-75 {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.col-75 button {
+  width: calc(33.33% - 8px);
+}
+
+.col-75 button:last-child {
+  width: calc(66.66% - 8px);
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-25 button {
+  width: calc(100% - 4px);
+}
+
+.screen {
+  display: block;
+  width: 100%;
+  height: var(--screen-height);
+  font-size: var(--screen-font-size);
+  text-align: right;
+  color: var(--screen-color);
+  background: var(--screen-bg);
+  padding: var(--screen-padding);
+  margin: 0 0 10px;
+  border: 0;
+}
+
+.screen:focus {
+  outline: none;
+}
+
+button {
+  min-height: var(--btn-min-height);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--btn-color);
+  background: var(--btn-bg);
+  padding: var(--btn-padding);
+  margin: 0 4px 8px;
+  border-radius: var(--base-border-radius);
+  border: 0;
+  cursor: pointer;
+  transition: filter 0.3s ease-in-out;
+}
+
+button:hover {
+  filter: brightness(0.8);
+}
+
+button svg {
+  width: 24px;
+}
+
+button[name="reset"],
+button[name="deleteLast"] {
+  color: var(--btn-reset-color);
+  background: var(--btn-reset-bg);
+}
+
+button[type="submit"] {
+  color: var(--btn-submit-color);
+  background: var(--btn-submit-bg);
+}
+
+.operation:not([name="comma"]):not([name="deleteLast"]) {
+  color: var(--btn-operation-color);
+  background: var(--btn-operation-bg);
+}

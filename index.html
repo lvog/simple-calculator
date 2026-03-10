@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="form-holder">
+        <form class="calculator" action="#">
+          <input class="screen" type="text" name="screen" value="0" readonly />
+          <div class="row">
+            <div class="col-75">
+              <button type="reset" name="reset">AC</button>
+              <button class="operation" type="button" name="deleteLast">
+                <svg viewBox="0 0 32 22" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.708 7.28a1 1 0 0 0-1.427 0l-2.3 2.3-2.239-2.24a1 1 0 0 0-1.415 1.42l2.239 2.23-2.268 2.27a1 1 0 1 0 1.427 1.43l2.268-2.27 2.239 2.24a1 1 0 0 0 1.415-1.42l-2.239-2.23 2.3-2.3a1 1 0 0 0 0-1.43Zm7.288 10.72c0 1.1-.896 2-2.002 2H10.467l-8.151-9.02 8.122-8.98h17.558c1.106 0 2.002.9 2.002 2v14Zm-2.002-18h-17.945a1 1 0 0 0-.78.28L.285 10.22a1.07 1.07 0 0 0 0 1.53l8.986 9.94a1 1 0 0 0 .708.29h18.017c2.211 0 4.004-1.79 4.004-4V4c0-2.21-1.793-4-4.004-4Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <button class="operation" type="button" name="percent">%</button>
+              <button class="number" type="button" value="7" name="seven">
+                7
+              </button>
+              <button class="number" type="button" value="8" name="eight">
+                8
+              </button>
+              <button class="number" type="button" value="9" name="nine">
+                9
+              </button>
+              <button class="number" type="button" value="4" name="four">
+                4
+              </button>
+              <button class="number" type="button" value="5" name="five">
+                5
+              </button>
+              <button class="number" type="button" value="6" name="six">
+                6
+              </button>
+              <button class="number" type="button" value="1" name="one">
+                1
+              </button>
+              <button class="number" type="button" value="2" name="two">
+                2
+              </button>
+              <button class="number" type="button" value="3" name="three">
+                3
+              </button>
+              <button class="number" type="button" value="0" name="zero">
+                0
+              </button>
+              <button class="operation" type="button" value="," name="comma">
+                ,
+              </button>
+            </div>
+            <div class="col-25">
+              <button class="operation" type="button" name="divide" value="/">
+                /
+              </button>
+              <button class="operation" type="button" name="multiply" value="*">
+                *
+              </button>
+              <button class="operation" type="button" name="subtract" value="-">
+                -
+              </button>
+              <button class="operation" type="button" name="add" value="+">
+                +
+              </button>
+              <button class="btn" type="submit">=</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
