@@ -27,3 +27,6 @@ The calculator supports the following keys:
 |Enter|Calculate result|
 |Backspace|Delete last character|
 |Delete / Escape|Reset calculator|
+
+## Live Demo
+https://lvog.github.io/simple-calculator/
