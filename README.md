@@ -1,5 +1,5 @@
 # Simple Calculator
-A simple web calculator built with HTML, CSS, JavaScript and TypeScript.
+A simple web calculator built with HTML, CSS and TypeScript.
 The application supports basic arithmetic operations and keyboard input.
 
 ## Features
@@ -16,6 +16,7 @@ The application supports basic arithmetic operations and keyboard input.
 - CSS3
 - JavaScript (Classes, DOM manipulation, Event handling)
 - TypeScript (for type safety)
+- Vite
 
 ## Keyboard Support
 The calculator supports the following keys:
